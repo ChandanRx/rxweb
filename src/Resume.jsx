@@ -8,7 +8,7 @@ const Resume = () =>{
         <>
             <img src={img} alt='img' className="resume"/>
             <div className="text-center mt-2">
-            <NavLink to='/service' className='btn-get-started'> My Skills </NavLink>
+            <NavLink to='/skills' className='btn-get-started'> My Skills </NavLink>
             </div>
         </>
     )
