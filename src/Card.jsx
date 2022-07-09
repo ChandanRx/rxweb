@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+
 
 const Card = (props) =>{
     return(
@@ -10,7 +10,6 @@ const Card = (props) =>{
   <div className="card-body">
     <h5 className="card-title">{props.title}</h5>
     <p className="card-text">{props.p}</p>
-    <NavLink to='' className="btn btn-outline-primary">Learn More</NavLink>
   </div>
 </div>
 </div>

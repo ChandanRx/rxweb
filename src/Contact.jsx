@@ -1,94 +1,45 @@
-import React, { useState } from "react";
+import React from 'react'
+import { FaInstagram ,FaTwitterSquare ,FaLinkedin , FaWhatsappSquare } from 'react-icons/fa';
+import { FaFacebookSquare , FaPhoneAlt , FaMailBulk} from 'react-icons/fa';
+
 
 const Contact = () => {
-   
-  const [Data, setData] = useState({
-    fullname : '',
-    phone : '',
-    email : '',
-    msg : ''
-  })
-
-  const inputEvent = (event) =>{
-        const {name , value} = event.target;
-        setData((preVal)=>{
-              return{
-                ...preVal, [name] : value ,
-              }
-        })
-  }
-
-const formSubmit = (e) =>{
-    e.preventDefault();
-    alert(`my name is ${Data.fullname} , my phone number is ${Data.phone} , my email id is ${Data.email} and here what i want is ${Data.msg}`)
-}
-
   return (
-    <>
-           <div className="my-5">
-                  <h1 className="text-center"> Contact ME </h1>
-           </div>
-           <div className="container contact div">
-           <div className="row">
-            <div className="col-md-6 col-10 mx-auto">
-
-            <form onSubmit={formSubmit}>
-            <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Full Name</label>
-  
-  <input type="text" 
-  class="form-control" 
-  id="exampleFormControlInput1"
-  name='fullname'
-  value={Data.fullname}
-  onChange={inputEvent} 
-  placeholder="Type your Name"/>
-</div>
-
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Mobile Number</label>
-  <input type="number"
-   class="form-control" 
-   id="exampleFormControlInput1"
-   name='phone'
-   value={Data.phone}
-   onChange={inputEvent} 
-   placeholder="Type your mobile no."/>
-</div>
-
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" 
-  class="form-control" 
-  id="exampleFormControlInput1"
-  name='email'
-  value={Data.email}
-  onChange={inputEvent} 
-  placeholder="name@example.com"/>
-</div>
-
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label"> Message </label>
-  <textarea class="form-control" 
-  id="exampleFormControlTextarea1" 
-  rows="3"
-  name='msg'
-  onChange={inputEvent}
-  value={Data.msg}
-  >
-
-  </textarea>
-</div>
- <div class="col-12">
-    <button className="btnS" type="submit">Submit form</button>
-  </div>
-            </form>
-
-            </div>
-           </div>
-
-           </div>
-    </>
+      <>
+      <div className='main-d'>
+        <div className='socialM'>
+          
+            <p>
+               <a href="https://www.facebook.com/chandan.rxn" target='_chandan'> <FaFacebookSquare className='fb'/> </a>
+            </p>
+            <p>
+            <a href="https://www.instagram.com/chandan.pargi/" target='_chandan'> <FaInstagram className='insta'/> </a>
+            </p>
+            <p>
+            <a href="https://twitter.com/rxn_13" target='_chandan'> <FaTwitterSquare className='twitter'/> </a>
+            </p>
+            <p>
+            <a href="https://www.linkedin.com/in/chandan-pargi-459272187/" target='_chandan'> <FaLinkedin className='linkdin'/> </a>
+            </p>
+            <p>
+            <a href="https://wa.me/9904284492?text=" target='_chandan'> <FaWhatsappSquare className='whatsapp'/> </a>
+            </p>
+        </div>
+      </div>
+      <div className='cont'>
+      <h3>
+          <FaMailBulk/> : chandan.rxn@gmail.com
+        </h3>
+        <h3>
+          <FaPhoneAlt/> : +919773283615
+        </h3>
+        <br/>
+        <br/>
+        <h5>
+         🙏 Jay Shree Krishna 🙏
+        </h5>
+      </div>
+      </>
   )
 }
 

@@ -7,21 +7,27 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import Service from "./Service";
 import Home from "./Home";
 import Navbar from "./Navbar";
+import Resume from "./Resume";
+
+
 
 const App = () =>{
 
 
      return(
         <>
+        <div>
         <Navbar/>
         <Routes>
                 <Route exact path="/" element={<Home/>}/>
-                <Route exact path="/about" element={<About/>}/>
-                <Route exact path="/service" element={<Service/>}/>
+                <Route exact path="/projects" element={<About/>}/>
+                <Route exact path="/resume" element={<Resume/>}/>
+                <Route exact path="/skills" element={<Service/>}/>
                 <Route exact path="/contact" element={<Contact/>}/>
                 
 
         </Routes>
+        </div>    
         </>
      )
 }

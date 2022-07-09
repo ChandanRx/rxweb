@@ -6,10 +6,10 @@ const Home = () =>{
     return(
         <>
        <Common 
-        name='Grow Your Knowledge With' 
+        name=' Hello , I am ' 
         imgsrc={web} 
-        visit='/service'
-        btname='Get Started' />
+        visit='/resume'
+        btname='Resume' />
         </>
     )
 }
