@@ -24,6 +24,7 @@ const Common = (props) =>{
                 <NavLink to={props.visit} className="btn-get-started"> {props.btname} </NavLink>
             </div>
       </div> 
+<hr/>
 
       <div className="col-lg-6 order-1 order-lg-2 header-img">
               <img src={props.imgsrc} className='image-fluid animated align-content-center' style={{width:'550px'}} alt=""/>
