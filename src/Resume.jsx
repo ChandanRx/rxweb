@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import img from './images/rrrssm.png'
+import img from './images/5698.png'
 
 
 const Resume = () =>{
