@@ -15,7 +15,7 @@ const Common = (props) =>{
                 {props.name} <strong className="brand-name" style={{color:'lightgray'}}> Chandan Pargi </strong>
             </h1>
             <h2 className="my-3" style={{color:'silver'}}>
-                I Am A React Web developer 
+                I Am A Software developer 
             </h2>
             <p className="my-3" style={{color:'silver'}}>
                 #StopHate ❤️ #SpreadHappiness 
